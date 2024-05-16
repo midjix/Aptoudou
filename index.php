@@ -23,6 +23,13 @@
                     <label for="code">Code d'idenfication : </label>
                     <input type="text" id="code" name="code"><br>
                 </p>
+                <p>
+                    <?php
+                    if (isset($_GET[$message])){
+                        echo $message;
+                    }
+                    ?>
+                </p> 
             </form>
             <p>
                 <a href="validation.php"><button>Se connecter</button></a>
