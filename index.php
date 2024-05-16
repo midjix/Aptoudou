@@ -30,12 +30,10 @@
                         }
                     }
                     ?>
+                    <a href="validation.php"><button>Se connecter</button></a>
+                    <a href="creation_compte.php"><button>Créer un compte</button></a>
                 </p> 
             </form>
-            <p>
-                <a href="validation.php"><button>Se connecter</button></a>
-                <a href="creation_compte.php"><button>Créer un compte</button></a>
-            </p>
         </main>
     </body>
 </html>
