@@ -13,7 +13,7 @@
             <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
         </header>
         <main>
-            <form action="validation.php" method="POST" id="article">
+            <form action="validation.php" method="POST" class="article">
                 <p>
                     <label for="mail">Identifiant d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
