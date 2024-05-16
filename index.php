@@ -27,8 +27,6 @@
                     if (isset($_GET['message'])){
                         if ($_GET['message'] == 1){
                             echo "<script>alert('Pas de comte avec ce mail')</script>";
-                        } else {
-                            echo "c'est pas good";
                         }
                     }
                     ?>
