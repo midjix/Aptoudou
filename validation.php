@@ -5,13 +5,19 @@
         $mail = $_POST['mail'];
         $mdp = $_POST['mdp'];
         try {
-            $statement = $connexion -> prepare("SELECT * FROM utilisateur WHERE mail = $mail");
-            $statement -> execute();
+            $statement = $connexion -> prepare("SELECT * FROM utilisateur WHERE mail = ? ");
+            $statement -> execute([$mail]);
 
-            $verification = $statement -> fetch();
+            $utilisateur = $statement -> fetch();
 
-            header("Location: your_profil.php");
-            exit();
+            if ($mdp == $utilisateur['mdp']){
+                header("Location: your_profil.php");
+                exit();
+            } else { 
+                header("Location: index.php?message=1");
+                exit();
+            }
+
         } catch (\Throwable $th) {
             header("Location: index.php?message=1");
             exit();
