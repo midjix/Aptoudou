@@ -15,6 +15,7 @@
         <main class="article">
             <form action="ajout.php">
                 <p><h1>Nouvel utilisateur</h1></p>
+                <input type="hidden" name="task_id">
                 <p>
                     <label for="mail">Mail d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
