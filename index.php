@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img src="logo_utiliasteur.jpg" alt="afiicher logo utilisateur">
+            <img src="logo_utilisateur.jpg" alt="afiicher logo utilisateur">
             <p><h1>Utilisateur</h1></p>
         </header>
         <main>
