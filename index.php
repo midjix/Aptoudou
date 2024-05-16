@@ -15,8 +15,8 @@
         <main>
             <form action="validation.php">
                 <p>
-                    <label for="nom">Nom d'utilisateur : </label>
-                    <input type="text" id="nom" name="nom"><br>
+                    <label for="mail">Identifiant d'utilisateur : </label>
+                    <input type="mail" id="nom" name="nom"><br>
                 </p>
                 <p>
                     <label for="code">Code d'idenfication : </label>
