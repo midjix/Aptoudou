@@ -1,12 +1,14 @@
 <?php
-require 'config.php';
-$id = $_GET['id'];
+    require 'config.php';
+    $id = $_GET['id'];
 
-$statement_utilisateur = $connexion -> prepare("SELECT * FROM utilisateur WHERE user_id = $id");
-$statement_utilisateur -> execute();
-$membres = $statement_utilisateur -> fetch();
+    $statement_utilisateur = $connexion -> prepare("SELECT * FROM utilisateur WHERE user_id = $id");
+    $statement_utilisateur -> execute();
+    $membres = $statement_utilisateur -> fetch();
 
-$statement_projets = $connexion -> prepare("SELECT * FROM projets WERE")
+    $statement_projets = $connexion -> prepare("SELECT * FROM projets WHERE user_id = $id");
+    $statement_projets -> execute();
+    $projets = $statement_projets -> fetch();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +26,15 @@ $statement_projets = $connexion -> prepare("SELECT * FROM projets WERE")
             </section>
             <section>
                 <h2>votre liste de projets : </h2>
-                <p>
-                    <?php foreach() ?>
-                </p>
+                <ul>
+                    <?php foreach($projets as $projet): ?>
+                        <li>
+                            <?= $projet['is_done'] ? '(ternminé) ' :  '(à ternminer) '; ?>
+                            <?= $projet['nom']; ?>
+                            <a href="projet.php?id=<?= $task['projet_ID']; ?>"> modifier</a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </section>
         </main>
     </body>
