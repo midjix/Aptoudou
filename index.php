@@ -14,7 +14,7 @@
             <p><h1>Utilisateur</h1></p>
         </header>
         <main>
-            <form action="validation.php">
+            <form action="validation.php" method="POST">
                 <p>
                     <label for="mail">Identifiant d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
