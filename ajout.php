@@ -6,8 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = $_POST['nom'];
     $mdp = $_POST['mdp'];
 
-    $statement = $connexion->prepare("INSERT INTO utilisateur (mail, nom, mdp) VALUES ($mail, $nom, $mdp)");
-    $statement->execute();
+    $ajouter_utilisateur = $connexion->prepare("INSERT INTO utilisateur (mail, nom, mdp) VALUES ($mail, $nom, $mdp)");
+    $ajouter_utilisateur->execute();
+    
     header("Location: index.php");
     exit();
 }
