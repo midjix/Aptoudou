@@ -6,10 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <img src="logo_utilisateur.jpg" alt="afiicher logo utilisateur">
+            <img src="logo_utilisateur.jpg" alt="afiicher logo utilisateur" class="logo">
             <p><h1>Utilisateur</h1></p>
         </header>
         <main>
