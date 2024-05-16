@@ -12,9 +12,9 @@
             <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
 
         </header>
-        <main>
-            <form action="validation.php" class="article">
-            <p><h1>Nouvel utilisateur</h1></p>
+        <main class="article">
+            <form action="ajout.php">
+                <p><h1>Nouvel utilisateur</h1></p>
                 <p>
                     <label for="mail">Mail d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
@@ -27,9 +27,9 @@
                     <label for="mdp">Code d'idenfication : </label>
                     <input type="text" id="mdp" name="mdp" minlenght="8"><br>
                 </p>
-                <a href="ajout.php"><button>Créer votre compte</button></a>
-                <a href="index.php"><button>Annuler</button></a>
             </form>
+            <a href="ajout.php"><button>Créer votre compte</button></a>
+            <a href="index.php"><button>Annuler</button></a>
         </main>
     </body>
 </html>

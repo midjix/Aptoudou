@@ -12,8 +12,8 @@
         <header>
             <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
         </header>
-        <main>
-            <form action="validation.php" method="POST" class="article">
+        <main class="article">
+            <form action="validation.php" method="POST">
                 <p>
                     <label for="mail">Identifiant d'utilisateur : </label>
                     <input type="mail" id="mail" name="mail"><br>
@@ -26,16 +26,16 @@
                     <?php
                     if (isset($_GET['message'])){
                         if ($_GET['message'] == 1){
-                            echo "Pas de compte avec ce mail";
+                            echo "<script>alert('Pas de comte avec ce mail')</script>";
                         } else {
                             echo "c'est pas good";
                         }
                     }
                     ?>
                     <button type = "submit">Se connecter</button>
-                    <a href="creation_compte.php"><button>Créer un compte</button></a>
                 </p> 
             </form>
+            <a href="creation_compte.php"><button>Créer un compte</button></a>
         </main>
     </body>
 </html>
