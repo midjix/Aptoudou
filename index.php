@@ -16,7 +16,7 @@
             <form action="validation.php" method="POST" class="article">
                 <p>
                     <label for="mail">Identifiant d'utilisateur : </label>
-                    <input type="mail" id="nom" name="nom"><br>
+                    <input type="mail" id="mail" name="mail"><br>
                 </p>
                 <p>
                     <label for="mdp">Code d'idenfication : </label>
@@ -27,10 +27,12 @@
                     if (isset($_GET[$message])){
                         if ($_GET[$message] == 1){
                             echo "Pas de compte avec ce mail";
+                        } else {
+                            echo "";
                         }
                     }
                     ?>
-                    <a href="validation.php"><button>Se connecter</button></a>
+                    <button type = "submit">Se connecter</button>
                     <a href="creation_compte.php"><button>Créer un compte</button></a>
                 </p> 
             </form>

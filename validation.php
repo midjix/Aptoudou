@@ -8,11 +8,10 @@
         $statement -> execute();
         
         $verification = $statement -> fetch();
-        if($verification){
+        if(false){
             header("Location: your_profil.php");
             exit();
-        }
-        else{
+        } else {
             header("Location: index.php?message=1");
             exit();
         }
