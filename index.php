@@ -9,8 +9,8 @@
     </head>
     <body>
         <header>
-            <img src="OIP.jpg" alt="afiicher logo utilisateur">
-            <p>Utilisateur</p>
+            <img src="logo_utiliasteur.jpg" alt="afiicher logo utilisateur">
+            <p><h1>Utilisateur</h1></p>
         </header>
         <main>
             <form action="validation.php">
@@ -25,8 +25,6 @@
             </form>
             <p>
                 <a href="validation.php"><button>Se connecter</button></a>
-            </p>
-            <p>
                 <a href="creation_compte.php"><button>Créer un compte</button></a>
             </p>
         </main>
