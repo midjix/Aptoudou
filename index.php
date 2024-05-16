@@ -13,7 +13,7 @@
             <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
         </header>
         <main>
-            <form action="validation.php" method="POST" id="article">
+            <form action="validation.php" method="POST" class="article">
                 <p>
                     <label for="mail">Identifiant d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
@@ -28,12 +28,10 @@
                         echo $message;
                     }
                     ?>
+                    <a href="validation.php"><button>Se connecter</button></a>
+                    <a href="creation_compte.php"><button>Créer un compte</button></a>
                 </p> 
             </form>
-            <p>
-                <a href="validation.php"><button>Se connecter</button></a>
-                <a href="creation_compte.php"><button>Créer un compte</button></a>
-            </p>
         </main>
     </body>
 </html>
