@@ -27,7 +27,7 @@
                 </p>
             </form>
             <p>
-                <a href="validation.php"><button>Créer votre compte</button></a>
+                <a href="ajout.php"><button>Créer votre compte</button></a>
                 <a href="index.php"><button>Annuler</button></a>
             </p>
         </main>

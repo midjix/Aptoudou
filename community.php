@@ -24,8 +24,8 @@ $membres = $statement_utilisateur -> fetchAll();
                 echo "<section>";
                 echo "<img src='logo_utilisateur.jpg' alt='afiicher logo utilisateur'>"
                 echo '<a href="profil.php?id='. $membre['user_id'].'">'. $membre['username'] . '</a>'
-                echo '<a href="follow.php?id='. $membre['user_id'].'">Follow</a>'
-                echo '<a href="unfollow.php?id='. $membre['user_id'].'">Unfollow</a>'
+                echo '<a href="follow.php?id='. $membre['user_id'].'"><button>Follow</button></a>'
+                echo '<a href="unfollow.php?id='. $membre['user_id'].'"><button>Unfollow</button></a>'
                 echo "</section>";
             }
             ?>
