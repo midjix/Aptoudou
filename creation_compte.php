@@ -27,8 +27,8 @@
                     <label for="mdp">Code d'idenfication : </label>
                     <input type="text" id="mdp" name="mdp" minlenght="8"><br>
                 </p>
+                <button type="submit">Créer votre compte</button></a>
             </form>
-            <a href="ajout.php"><button>Créer votre compte</button></a>
             <a href="index.php"><button>Annuler</button></a>
         </main>
     </body>
