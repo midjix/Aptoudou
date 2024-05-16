@@ -22,8 +22,8 @@
                     <input type="text" id="nom" name="nom"><br>
                 </p>
                 <p>
-                    <label for="code">Code d'idenfication : </label>
-                    <input type="text" id="code" name="code" minlenght="8"><br>
+                    <label for="mdp">Code d'idenfication : </label>
+                    <input type="text" id="mdp" name="mdp" minlenght="8"><br>
                 </p>
             </form>
             <p>

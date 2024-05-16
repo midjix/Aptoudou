@@ -19,13 +19,15 @@
                     <input type="mail" id="nom" name="nom"><br>
                 </p>
                 <p>
-                    <label for="code">Code d'idenfication : </label>
-                    <input type="text" id="code" name="code"><br>
+                    <label for="mdp">Code d'idenfication : </label>
+                    <input type="text" id="mdp" name="mdp"><br>
                 </p>
                 <p>
                     <?php
                     if (isset($_GET[$message])){
-                        echo $message;
+                        if ($_GET[$message] == 1){
+                            echo "Pas de compte avec ce mail";
+                        }
                     }
                     ?>
                 </p> 
