@@ -1,0 +1,6 @@
+.logo {
+    position: relative; /* Définit la position relative pour permettre le positionnement absolu à l'intérieur */
+    width:120px;
+    height:100px;
+}
+ 
