@@ -13,9 +13,9 @@
 
         </header>
         <main class="article">
-            <form action="ajout.php">
+            <form action="ajout.php" method="POST">
                 <p><h1>Nouvel utilisateur</h1></p>
-                <input type="hidden" name="task_id">
+                <input type="hidden" name="user_id">
                 <p>
                     <label for="mail">Mail d'utilisateur : </label>
                     <input type="mail" id="nom" name="nom"><br>
