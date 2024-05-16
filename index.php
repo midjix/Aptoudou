@@ -24,11 +24,11 @@
                 </p>
                 <p>
                     <?php
-                    if (isset($_GET[$message])){
-                        if ($_GET[$message] == 1){
+                    if (isset($_GET['message'])){
+                        if ($_GET['message'] == 1){
                             echo "Pas de compte avec ce mail";
                         } else {
-                            echo "";
+                            echo "c'est pas good";
                         }
                     }
                     ?>

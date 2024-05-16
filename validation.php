@@ -4,16 +4,17 @@
    if(isset($_POST['mail'])){
         $mail = $_POST['mail'];
         $mdp = $_POST['mdp'];
-        $statement = $connexion -> prepare("SELECT * FROM utilisateur WHERE mail = $mail");
-        $statement -> execute();
-        
-        $verification = $statement -> fetch();
-        if(false){
+        try {
+            $statement = $connexion -> prepare("SELECT * FROM utilisateur WHERE mail = $mail");
+            $statement -> execute();
+
+            $verification = $statement -> fetch();
+
             header("Location: your_profil.php");
             exit();
-        } else {
+        } catch (\Throwable $th) {
             header("Location: index.php?message=1");
             exit();
-        }
+        }     
    }
 ?>
