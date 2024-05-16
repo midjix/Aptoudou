@@ -1,6 +1,35 @@
-.logo {
-    position: relative; /* Définit la position relative pour permettre le positionnement absolu à l'intérieur */
-    width:120px;
-    height:100px;
+body {
+    font-family: 'Arial', sans-serif;
+    color: #010102;
+    line-height: 1.6;
+    background-color: #f3d6ab;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width:300px;
+    height:300px;
+    filter: brightness(120%)
+}
+
+
+
+article {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    min-width: 200px;
+}
+
  
+
+

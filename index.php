@@ -10,8 +10,7 @@
     </head>
     <body>
         <header>
-            <img src="logo_utilisateur.jpg" alt="afiicher logo utilisateur" class="logo">
-            <p><h1>Utilisateur</h1></p>
+            <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
         </header>
         <main>
             <form action="validation.php" method="POST">
