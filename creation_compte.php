@@ -18,7 +18,7 @@
                 <input type="hidden" name="user_id">
                 <p>
                     <label for="mail">Mail d'utilisateur : </label>
-                    <input type="mail" id="nom" name="nom"><br>
+                    <input type="mail" id="mail" name="mail"><br>
                 </p>
                 <p>
                     <label for="nom">Nom d'utilisateur : </label>
