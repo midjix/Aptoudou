@@ -35,7 +35,7 @@
                             foreach ($projets as $projet) {
                                 echo '<li>' . ($projet['is_done'] ? '(ternminé) ' :  '(à ternminer) ');
                                 echo $projet['nom']; 
-                                echo '<a href="projet.php?id=' . $projet['projet_ID']  . '"> modifier</a></li>';
+                                echo '<a href="modifier_projet.php?id=' . $projet['projet_ID']  . '"> modifier</a></li>';
                             }
                         } else {
                             echo '<li>Pas de projet</li>';
