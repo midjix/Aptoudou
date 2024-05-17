@@ -17,6 +17,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <main>
@@ -33,13 +34,14 @@
                             foreach ($projets as $projet) {
                                 echo '<li>' . ($projet['is_done'] ? '(ternminé) ' :  '(à ternminer) ');
                                 echo $projet['nom']; 
-                                echo '<a href="projet.php?id=' . $task['projet_ID']  . '"> modifier</a></li>';
+                                echo '<a href="projet.php?id=' . $projet['projet_ID']  . '"> modifier</a></li>';
                             }
                         } else {
                             echo '<li>Pas de projet</li>';
                         }   
                     ?>
                 </ul>
+                <a href="creation_projet.php"><button>Ajouter projet</button></a>
             </section>
             <section>
                 <nav>
