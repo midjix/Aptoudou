@@ -52,4 +52,8 @@ section{
     margin-bottom: 2em;
 }
 
+li{
+    list-style-type: none;
+}
+
 
