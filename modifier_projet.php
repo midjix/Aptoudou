@@ -33,7 +33,7 @@
         <header>
             <h1 class="titre">Modifier le projet</h1>
         </header>
-        <form action="edit_task_form.php" method="POST">
+        <form action="modifier_projet.php" method="POST">
             <section>
             <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
             <p>
