@@ -16,7 +16,7 @@ $membres = $statement_utilisateur -> fetchAll();
     </head>
     <body>
         <header>
-            <p><h1>Community</h1></p>
+            <p><h1 class="titre">Community</h1></p>
         </header>
         <main>
             <?php

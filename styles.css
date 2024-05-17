@@ -5,6 +5,11 @@ body {
     background-color: #d1fdd3;
 }
 
+.titre{
+    color: #5bce6b;
+}
+
+
 header{
     display: flex;
     justify-content: center;
