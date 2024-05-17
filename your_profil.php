@@ -1,14 +1,15 @@
 <?php
+    session_start();
     require 'config.php';
-    $id = $_GET['id'];
+    $user_id = $_SESSION['user_id'];
 
-    $statement_utilisateur = $connexion -> prepare("SELECT * FROM utilisateur WHERE user_id = $id");
-    $statement_utilisateur -> execute();
-    $membres = $statement_utilisateur -> fetch();
+    $statement_utilisateur = $connexion -> prepare("SELECT * FROM utilisateur WHERE user_id = ?");
+    $statement_utilisateur -> execute([$user_id]);
+    $membre = $statement_utilisateur -> fetch();
 
-    $statement_projets = $connexion -> prepare("SELECT * FROM projets WHERE user_id = $id");
-    $statement_projets -> execute();
-    $projets = $statement_projets -> fetch();
+    $statement_projets = $connexion -> prepare("SELECT * FROM projets WHERE user_id = ?");
+    $statement_projets -> execute([$user_id]);
+    $projets = $statement_projets -> fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,13 +28,17 @@
             <section>
                 <h2>votre liste de projets : </h2>
                 <ul>
-                    <?php foreach($projets as $projet): ?>
-                        <li>
-                            <?= $projet['is_done'] ? '(ternminé) ' :  '(à ternminer) '; ?>
-                            <?= $projet['nom']; ?>
-                            <a href="projet.php?id=<?= $task['projet_ID']; ?>"> modifier</a>
-                        </li>
-                    <?php endforeach; ?>
+                    <?php 
+                        if ($projets != NULL){
+                            foreach ($projets as $projet) {
+                                echo '<li>' . ($projet['is_done'] ? '(ternminé) ' :  '(à ternminer) ');
+                                echo $projet['nom']; 
+                                echo '<a href="projet.php?id=' . $task['projet_ID']  . '"> modifier</a></li>';
+                            }
+                        } else {
+                            echo '<li>Pas de projet</li>';
+                        }   
+                    ?>
                 </ul>
             </section>
         </main>
