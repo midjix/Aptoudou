@@ -13,7 +13,7 @@
         </header>
         <main class="article">
             <h1>Créer un nouveau projet</h1>
-            <form action="create_task_form.php" method="POST">
+            <form action="ajout_projet.php" method="POST">
                 <input type="hidden" name="projet_ID">
                 <p>
                 <label for="nom">Nom du projet : </label>
