@@ -30,7 +30,7 @@
     </head>
     <body>
         <h1>Modifier le projet</h1>
-        <form action="edit_task_form.php" method="POST">
+        <form action="modifier_projet.php" method="POST">
             <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
             <p>
                 <label for="nom">Nom du projet : </label>
