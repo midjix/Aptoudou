@@ -21,8 +21,8 @@ header{
 
 
 .article {
-    margin: 20px;
-    padding: 20px;
+    margin: 2em;
+    padding: 2em;
     background-color: #5bce6b;
     border-radius: 8px;
     box-shadow: 0 10px rgba(0, 0, 0, 0.1);
@@ -30,8 +30,21 @@ header{
     width: 50%;
     margin: auto;
     min-width: 200px;
+    border-color: #d1fdd3;
+    border-width: 30px;
 }
 
-
+section{
+    margin: 2em;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    min-width: 200px;
+    background-color: #5bce6b;
+    border-width: 30px;
+    margin-bottom: 2em;
+}
 
 
