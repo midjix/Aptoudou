@@ -11,6 +11,7 @@
     $statement_projets -> execute([$user_id]);
     $projets = $statement_projets -> fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
