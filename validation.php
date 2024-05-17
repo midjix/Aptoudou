@@ -1,4 +1,5 @@
 <?php
+    session_start();
    require 'config.php';
 
    if(isset($_POST['mail'])){
@@ -11,6 +12,7 @@
             $utilisateur = $statement -> fetch();
 
             if ($mdp == $utilisateur['mdp']){
+                $_SESSION['user_id'] = $utilisateur['user_id'];
                 header("Location: your_profil.php");
                 exit();
             } else { 
