@@ -13,17 +13,20 @@ $membres = $statement_utilisateur -> fetchAll();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Community</title>
+        <link rel="stylesheet" href="community.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <p><h1>Community</h1></p>
         <header>
-            <p><h1>Community</h1></p>
+            <img src="utilisateur1.png" alt="afiicher logo utilisateur" class="logo">
         </header>
         <main>
             <?php
             foreach($membres as $membre){
+                echo "<section>";
                 echo "<section class='article'>";
-                echo "<img src='logo_utilisateur.jpg' alt='afiicher logo utilisateur'>";
+                echo "<h1><img src='utilisateur1.png' alt='afiicher logo utilisateur'><h1/>";
                 echo '<a href="profil.php?id='. $membre['user_id'].'">'. $membre['username'] . '</a>';
                 echo "</section>";
             }
