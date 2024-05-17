@@ -48,6 +48,9 @@
                 <nav>
                     <ul>
                         <li>
+                            <a href="changement.php"><button>Changer les infos de votre profil</button></a>
+                        </li>
+                        <li>
                             <a href="community.php"><button>Community</button></a>
                         </li>
                         <li>
