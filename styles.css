@@ -46,7 +46,7 @@ section{
     text-align: center;
     width: 50%;
     margin: auto;
-    min-width: 200px;
+    min-width: 850px;
     background-color: #5bce6b;
     border-width: 30px;
     margin-bottom: 2em;
@@ -56,4 +56,6 @@ li{
     list-style-type: none;
 }
 
-
+.button{
+    text-align: center;
+}
