@@ -27,7 +27,7 @@
                 </h1>
             </section>
             <section>
-                <h2>votre liste de projets : </h2>;
+                <h2>votre liste de projets : </h2>
                 <ul>
                     <?php 
                         if ($projets != NULL){
