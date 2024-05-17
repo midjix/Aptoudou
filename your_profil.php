@@ -42,7 +42,17 @@
                 </ul>
             </section>
             <section>
-                <a href="deconnexion.php">Deconnexion</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="community.php"><button>Community</button></a>
+                        </li>
+                        <li>
+                            <a href="deconnexion.php"><button>Deconnexion</button></a>
+                        </li>
+                    </ul>
+                </nav>
+                
             </section>
         </main>
     </body>
