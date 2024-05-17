@@ -30,9 +30,9 @@
                         }
                     }
                     ?>
-                    <button type = "submit">Se connecter</button>
                 </p> 
             </form>
+            <button type = "submit">Se connecter</button>
             <a href="creation_compte.php"><button>Créer un compte</button></a>
         </main>
     </body>
