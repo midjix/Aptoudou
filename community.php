@@ -21,13 +21,13 @@ $membres = $statement_utilisateur -> fetchAll();
         <main>
             <?php
             foreach($membres as $membre){
-                echo "<section>";
+                echo "<section class='section'>";
                 echo "<h1><img src='utilisateur1.png' alt='afficher logo utilisateur' class='logo'><h1/>";
                 echo '<a href="profil.php?id='. $membre['user_id'].'">'. $membre['username'] . '</a>';
                 echo "</section>";
             }
-            echo '<p><a href="your_profil.php"><button>Revenir à votre profil</button></a></p>';
             ?>
+            <p class="button"><a href='your_profil.php'><button>Revenir à votre profil</button></a></p>;
         </main>
     </body>
 </html>
