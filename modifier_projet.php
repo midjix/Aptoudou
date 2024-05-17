@@ -27,10 +27,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>modifier projet</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Modifier le projet</h1>
+        <header>
+            <h1 class="titre">Modifier le projet</h1>
+        </header>
         <form action="edit_task_form.php" method="POST">
+            <section>
             <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
             <p>
                 <label for="nom">Nom du projet : </label>
@@ -53,6 +57,7 @@
             <p>
                 <a href="delete_projet.php?id=<?php echo $projet['projet_ID'];?>"><button>Supprimer le projet</button></a>
             </p>
+            </section>
         </form>
     </body>
 </html>
