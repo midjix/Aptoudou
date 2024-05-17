@@ -1,9 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    color: #5bce6b;
+    color: #ffffff;
     line-height: 1.6;
     background-color: #d1fdd3;
 }
+
+.titre{
+    color: #5bce6b;
+}
+
 
 header{
     display: flex;
