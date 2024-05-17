@@ -12,15 +12,15 @@
 
         </header>
         <main class="article">
-            <h1>Créer une nouvelle tâche</h1>
+            <h1>Créer un nouveau projet</h1>
             <form action="create_task_form.php" method="POST">
                 <input type="hidden" name="projet_ID">
                 <p>
-                <label for="nom">Nom de la tâche : </label>
+                <label for="nom">Nom du projet : </label>
                 <input type="text" id="nom" name="nom"><br>
                 </p>
                 <p>
-                <label for="description">Description de la tâche : </label><br>
+                <label for="description">Description du projet : </label><br>
                 <textarea id="description" name="description" raw="10" cols="50"></textarea><br>
                 </p>
                 <p>
@@ -34,7 +34,7 @@
                 <button type="submit">Enregistrer les modifications</button>
                 </p>
             </form>
-            <a href="index.php"><button>Annuler</button></a>
+            <a href="your_profil.php"><button>Annuler</button></a>
         </main>
     </body>
 </html>

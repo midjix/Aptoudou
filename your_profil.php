@@ -40,6 +40,7 @@
                         }   
                     ?>
                 </ul>
+                <a href="creation_projet.php"><button>Ajouter projet</button></a>
             </section>
             <section>
                 <nav>
