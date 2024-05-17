@@ -27,8 +27,8 @@ $membres = $statement_utilisateur -> fetchAll();
                 echo '<a href="profil.php?id='. $membre['user_id'].'">'. $membre['username'] . '</a>';
                 echo "</section>";
             }
-            echo '<p><a href="your_profil.php"><button>Revenir à votre profil</button></a></p>';
             ?>
+            <p><a href="your_profil.php"><button>Revenir à votre profil</button></a></p>
         </main>
     </body>
 </html>
