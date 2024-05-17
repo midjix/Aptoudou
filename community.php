@@ -21,8 +21,8 @@ $membres = $statement_utilisateur -> fetchAll();
         <main>
             <?php
             foreach($membres as $membre){
-                echo "<section class='article'>";
-                echo "<h1><img src='utilisateur1.png' alt='afficher logo utilisateur'><h1/>";
+                echo "<section>";
+                echo "<h1><img src='utilisateur1.png' alt='afficher logo utilisateur' class='logo'><h1/>";
                 echo '<a href="profil.php?id='. $membre['user_id'].'">'. $membre['username'] . '</a>';
                 echo "</section>";
             }
