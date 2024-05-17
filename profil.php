@@ -1,5 +1,6 @@
 <?php
 require "config.php";
+session_start();
 if(isset($_GET['id'])){
     $id_profil = $_GET['id'];
     $statement_profil = $connexion -> prepare("SELECT * FROM utilisateur WHERE user_id = ?");
