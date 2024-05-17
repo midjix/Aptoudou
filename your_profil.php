@@ -41,6 +41,9 @@
                     ?>
                 </ul>
             </section>
+            <section>
+                <a href="deconnexion.php">Deconnexion</a>
+            </section>
         </main>
     </body>
 </html>
