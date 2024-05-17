@@ -55,7 +55,7 @@
                 <button type="submit">Enregistrer les modifications</button>
             </p>
             <p>
-                <form action="delete_projet.php?">
+                <form action="delete_projet.php?" method="POST">
                     <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
                     <button type="submit">Supprimer le projet</button></a>
                 </form>
