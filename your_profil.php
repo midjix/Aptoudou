@@ -22,11 +22,11 @@
         <main>
             <section>
                 <h1>
-                    bienvenue <?php echo $membre['username']?>
+                    bienvenue <?php echo $membre['username']?>;
                 </h1>
             </section>
             <section>
-                <h2>votre liste de projets : </h2>
+                <h2>votre liste de projets : </h2>;
                 <ul>
                     <?php 
                         if ($projets != NULL){

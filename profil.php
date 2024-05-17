@@ -30,6 +30,7 @@ if(isset($_GET['id'])){
             echo "<p></p>";
             echo '<a href="follow.php?id='. $profil['user_id'].'"><button>Follow</button></a>';
             echo '<a href="unfollow.php?id='. $profil['user_id'].'"><button>Unfollow</button></a>';
+            echo '<p><a href="your_profil.php><button>Revenir à votre profil</button></a></p>'
             ?>
         </main>
     </body>
