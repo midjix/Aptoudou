@@ -23,7 +23,7 @@
         <main>
             <section>
                 <h1>
-                    bienvenue <?php echo $membre['username']?>;
+                    bienvenue <?php echo $membre['username']?>
                 </h1>
             </section>
             <section>
