@@ -1,6 +1,7 @@
 <?php
     require 'config.php';
 
+
     if (isset($_POST['projet_ID'])) {
         $projet_ID = $_POST['projet_ID'];
         $nom = $_POST['nom'];
@@ -54,13 +55,10 @@
             <p>
                 <button type="submit">Enregistrer les modifications</button>
             </p>
-            <p>
-                <form action="delete_projet.php?" method="POST">
-                    <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
-                    <button type="submit">Supprimer le projet</button></a>
-                </form>
-            </p>
             </section>
         </form>
+        <p>
+            <a href="delete_projet.php?id=<?php echo $projet['projet_ID'];?>"><button>Supprimer le projet</button></a>
+        </p>
     </body>
 </html>

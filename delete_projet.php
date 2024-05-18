@@ -1,13 +1,14 @@
 <?php
-require 'config.php';
+    require 'config.php';
 
-if(isset($_POST['projet_ID'])){
-    $projet_ID = $_POST['projet_ID'];
+    $projet_ID = $_GET['id'];
 
-    $statement = $connexion->prepare("DELETE FROM projets WHERE projet_ID = ?");
-    $statement->execute([$projet_ID]);
+    $statement_projet = $connexion->prepare("DELETE FROM projets WHERE projet_ID = ?");
+    $statement_projet->execute([$projet_ID]);
 
     header("Location: your_profil.php");
     exit();
-} 
 ?>
+
+
+
