@@ -11,7 +11,7 @@
 
         $utilisateur = $statement -> fetch();
 
-        if ($mdp == $utilisateur['mdp']){
+        if ($utilisateur && $mdp == $utilisateur['mdp']){
             $_SESSION['user_id'] = $utilisateur['user_id'];
             header("Location: your_profil.php");
             exit();
@@ -20,6 +20,9 @@
             exit();
         }
     
+   } else {
+    header("Location: index.php?message=1");
+    exit();
    }
 ?>
 

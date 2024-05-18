@@ -26,7 +26,7 @@
                     <?php
                     if (isset($_GET['message'])){
                         if ($_GET['message'] == 1){
-                            echo "<script>alert('Pas de comte avec ce mail')</script>";
+                            echo "<script>alert('Identifiant ou mot de passe incorrect !')</script>";
                         }
                     }
                     ?>
