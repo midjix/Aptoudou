@@ -40,7 +40,7 @@ if(isset($_GET['id'])){
             echo "<p></p>";
             if ($is_following) {
                 echo "<h2>Projets de " . $profil['username'] . "</h2>";
-                if (isset($projets)) {
+                if (!empty($projets)) {
                     echo "<ul>";
                     foreach ($projets as $projet) {
                         echo "<li>" . htmlspecialchars($projet['nom']) . " - " . ($projet['is_done'] ? "Terminé" : "À terminer") . "</li>";
