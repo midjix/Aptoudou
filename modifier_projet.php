@@ -36,25 +36,25 @@
         </header>
         <form action="modifier_projet.php" method="POST">
             <section>
-            <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
-            <p>
-                <label for="nom">Nom du projet : </label>
-                <input type="text" id="nom" name="nom" value="<?php echo $projet['nom']; ?>"><br>
-            </p>
-            <p>
-                <label for="description">Description du projet : </label><br>
-                <textarea id="description" name="description" raw="10" cols="50"><?php echo $projet['description']; ?></textarea><br>
-            </p>
-            <p>
-                <label for="is_done">Statut : </label>
-                <select id="is_done" name="is_done">
-                    <option value="1" <?php if($projet['is_done']) echo 'selected'; ?>>Fait</option>
-                    <option value="0" <?php if(!$projet['is_done']) echo 'selected'; ?>>À faire</option>
-                </select><br>
-            </p>
-            <p>
-                <button type="submit">Enregistrer les modifications</button>
-            </p>
+                <input type="hidden" name="projet_ID" value="<?php echo $projet['projet_ID']; ?>">
+                <p>
+                    <label for="nom">Nom du projet : </label>
+                    <input type="text" id="nom" name="nom" value="<?php echo $projet['nom']; ?>"><br>
+                </p>
+                <p>
+                    <label for="description">Description du projet : </label><br>
+                    <textarea id="description" name="description" raw="10" cols="50"><?php echo $projet['description']; ?></textarea><br>
+                </p>
+                <p>
+                    <label for="is_done">Statut : </label>
+                    <select id="is_done" name="is_done">
+                        <option value="1" <?php if($projet['is_done']) echo 'selected'; ?>>Fait</option>
+                        <option value="0" <?php if(!$projet['is_done']) echo 'selected'; ?>>À faire</option>
+                    </select><br>
+                </p>
+                <p>
+                    <button type="submit">Enregistrer les modifications</button>
+                </p>
             </section>
         </form>
         <p>
