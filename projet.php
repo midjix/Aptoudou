@@ -40,9 +40,9 @@
                     <?php 
                         if ($tasks != NULL){
                             foreach ($tasks as $task) {
-                                echo '<li><a href="detail.php?id=' . $tasks['task_id']  . '">' . ($tasks['is_done'] ? '(fait) ' :  '(à faire) ');
-                                echo $tasks['nom'] . '</a>'; 
-                                echo '<a href="edit_task_form.php?id=' . $tasks['task_id']  . '"> modifier</a></li>';
+                                echo '<li><a href="detail.php?id=' . $task['task_id']  . '">' . ($task['is_done'] ? '(fait) ' :  '(à faire) ');
+                                echo $task['nom'] . '</a> '; 
+                                echo '<a href="edit_task_form.php?id=' . $task['task_id']  . '"><button>modifier</button></a></li>';
                             }
                         } else {
                             echo '<li>Pas de tache</li>';
