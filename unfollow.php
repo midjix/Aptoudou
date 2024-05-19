@@ -2,7 +2,7 @@
 require "config.php";
 session_start();
 $follower = $_SESSION['user_id'];
-$followed = $_GET['id'];
+$followed = $_GET['user_id'];
 if (!isset($_SESSION['user_id'])) {
     header("Location: index.php");
     exit();
