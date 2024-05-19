@@ -57,15 +57,17 @@
                 </p>
             </section>
         </form>
-        <p>
-            <a href="delete_projet.php?id=<?php echo $projet['projet_ID'];?>">
-                <button>Supprimer le projet</button>
-            </a>
-        </p>
-        <p>
-            <a href="your_profil.php">
-                <button>retour</button>
-            </a>
-        </p>
+        <section>
+            <p>
+                <a href="delete_projet.php?id=<?php echo $projet['projet_ID'];?>">
+                    <button>Supprimer le projet</button>
+                </a>
+            </p>
+            <p>
+                <a href="your_profil.php">
+                    <button>retour</button>
+                </a>
+            </p>
+        </section>
     </body>
 </html>
