@@ -38,7 +38,7 @@
         </main>
         <p>
             <a href="your_profil.php">
-                <button>retour</button>
+                <button>retour à votre profil</button>
             </a>
         </p>
     </body>
