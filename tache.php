@@ -11,7 +11,8 @@ $task = $statement -> fetch();
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detail</title>
+        <title>Detail de tache</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -29,7 +30,7 @@ $task = $statement -> fetch();
             </section>
         </main>
         <section>
-            <p><a href="index.php">retour</a></p>
+            <p><a href="your_profil.php">retour</a></p>
         </section>
     </body>
 </html>
