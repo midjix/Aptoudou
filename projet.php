@@ -57,6 +57,10 @@
                 </ul>
             </section>
         </main>
-        <p><a href="your_profil.php"><button>retour</button></a></p>
+        <p>
+            <a href="your_profil.php">
+                <button>retour</button>
+            </a>
+        </p>
     </body>
 </html>
