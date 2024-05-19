@@ -23,7 +23,7 @@
     </head>
     <body>
         <header>
-            <h1>detail du projet</h1>
+            <h1 class="titre">detail du projet</h1>
         </header>
         <main>
             <section>
