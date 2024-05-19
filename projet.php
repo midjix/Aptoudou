@@ -29,7 +29,7 @@
             <section>
                 <p>
                     <?php
-                        echo "nom = " . $projet['name'] . "<br/>" .
+                        echo "nom = " . $projet['nom'] . "<br/>" .
                         "description = " . $projet['description'] . "<br/>" .
                         "est terminé = " . ($projet['is_done']? 'oui' : 'non') . "<br/>";
                     ?>
@@ -56,11 +56,7 @@
                     </p>
                 </ul>
             </section>
-        
         </main>
-        
-        
-
-        <p><a href="index.php">retour</a></p>
+        <p><a href="your_profil.php"><button>retour</button></a></p>
     </body>
 </html>
