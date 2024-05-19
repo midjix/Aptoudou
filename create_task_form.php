@@ -1,17 +1,5 @@
 <?php
-require 'config.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $description = $_POST['description'];
-    $is_done = $_POST['is_done'];
-
-    $statement = $connexion->prepare("INSERT INTO tasks (name, description, is_done) VALUES (?, ?, ?)");
-    $statement->execute([$name, $description, $is_done]);
-
-    header("Location: index.php");
-    exit();
-} 
+    $projet_id = $_POST['projet_ID'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
     <body>
         <h1>Créer une nouvelle tâche</h1>
-        <form action="create_task_form.php" method="POST">
+        <form action="ajout_tache.php" method="POST">
             <input type="hidden" name="task_id">
+            <input type="hidden" name="projet_id" value="<?php echo $projet['projet_id']; ?>">
             <p>
-            <label for="name">Nom de la tâche : </label>
-            <input type="text" id="name" name="name"><br>
+            <label for="nom">Nom de la tâche : </label>
+            <input type="text" id="nom" name="nom"><br>
             </p>
             <p>
             <label for="description">Description de la tâche : </label><br>
